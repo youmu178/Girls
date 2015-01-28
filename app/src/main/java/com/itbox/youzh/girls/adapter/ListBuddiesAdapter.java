@@ -11,7 +11,6 @@ import com.jpardogo.listbuddies.lib.adapters.CircularLoopAdapter;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageSize;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,7 +61,6 @@ public class ListBuddiesAdapter extends CircularLoopAdapter {
 //        holder.mImage.setMinimumHeight(mRowHeight);
         String itemUrl = getItem(position);
         ImageLoader.getInstance().displayImage(itemUrl, holder.mImage, options);
-//        Picasso.with(mContext).load(itemUrl).into(holder.mImage);
         return convertView;
     }
 

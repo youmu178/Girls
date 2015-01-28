@@ -10,7 +10,6 @@ import android.widget.AdapterView;
 import com.itbox.youzh.girls.R;
 import com.itbox.youzh.girls.adapter.ListBuddiesAdapter;
 import com.itbox.youzh.girls.common.ImagesUrls;
-import com.itbox.youzh.girls.net.Net;
 import com.jpardogo.listbuddies.lib.views.ListBuddiesLayout;
 
 
@@ -33,7 +32,7 @@ public class ListBuddiesActivity extends BaseActivity implements ListBuddiesLayo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_listbuddies);
         ButterKnife.inject(this);
         mImagesLeftUrl.addAll(Arrays.asList(ImagesUrls.imageUrls_left));
         mImagesRightUrl.addAll(Arrays.asList(ImagesUrls.imageUrls_right));

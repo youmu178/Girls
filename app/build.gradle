@@ -29,4 +29,7 @@ dependencies {
     compile 'com.jpardogo.listbuddies:library:1.1.1'
     compile 'com.jakewharton:butterknife:6.0.0'
     compile 'com.etsy.android.grid:library:1.0.5'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.github.chenupt.android:dragtoplayout:1.0.2@aar'
+    compile project(':InfiniteIndicatorLibrary')
 }

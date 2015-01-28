@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+
+    <com.jpardogo.listbuddies.lib.views.ListBuddiesLayout
+        xmlns:listbuddies="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listbuddies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        listbuddies:speed="1"
+        listbuddies:gap="@dimen/gap"
+        listbuddies:gapColor="@color/gray"
+        listbuddies:listsDivider="@drawable/divider"
+        listbuddies:listsDividerHeight="@dimen/divider_height"
+        listbuddies:autoScrollFaster="right"
+        listbuddies:scrollFaster="left"/>
+
+</RelativeLayout>
