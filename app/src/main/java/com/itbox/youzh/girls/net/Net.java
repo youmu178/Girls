@@ -34,6 +34,10 @@ public class Net {
         }
         return "";
     }
+
+    public static String getData (String url) {
+        return "";
+    }
 //
 //    public static String post(String url, String json) {
 //        RequestBody requestBody = RequestBody.create(JSON, json);

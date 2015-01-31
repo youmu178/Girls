@@ -78,8 +78,9 @@ public class MainActivity extends ActionBarActivity implements BaseSliderView.On
         }).setup(mDragLayout);
 
         viewInfos = new ArrayList<PageInfo>();
-        viewInfos.add(new PageInfo("Page A", R.drawable.a));
-        viewInfos.add(new PageInfo("Page B", R.drawable.b));
+        viewInfos.add(new PageInfo("Page A", "http://d.hiphotos.baidu.com/image/h%3D200/sign=290b9abad73f8794ccff4f2ee21b0ead/a8773912b31bb0514357ca2a357adab44aede045.jpg"));
+        viewInfos.add(new PageInfo("Page B", "http://d.hiphotos.baidu.com/image/h%3D200/sign=22e31b3d324e251ffdf7e3f89787c9c2/72f082025aafa40f282c77daa964034f79f019ca.jpg"));
+        viewInfos.add(new PageInfo("Page C", "http://b.hiphotos.baidu.com/image/h%3D200/sign=92d481408401a18befeb154fae2f0761/eaf81a4c510fd9f9ce2a5205262dd42a2834a498.jpg"));
         testAnimLineIndicator();
 
         mFragmentList.add(new OneFragment());
@@ -95,7 +96,7 @@ public class MainActivity extends ActionBarActivity implements BaseSliderView.On
         for(PageInfo name : viewInfos){
             DefaultSliderView textSliderView = new DefaultSliderView(this);
             textSliderView
-                    .image(name.getDrawableRes())
+                    .image(name.getUrl())
                     .setScaleType(BaseSliderView.ScaleType.Fit)
                     .setOnSliderClickListener(this);
             textSliderView.getBundle()

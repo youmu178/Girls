@@ -8,6 +8,7 @@ import android.widget.Toast;
 import com.etsy.android.grid.StaggeredGridView;
 import com.itbox.youzh.girls.R;
 import com.itbox.youzh.girls.adapter.GridAdapter;
+import com.itbox.youzh.girls.common.Common;
 import com.itbox.youzh.girls.common.ImagesUrls;
 import com.itbox.youzh.girls.net.DataManager;
 
@@ -39,7 +40,7 @@ public class MainGridActivity extends BaseActivity implements AdapterView.OnItem
         mGridView.setOnItemClickListener(this);
 
         DataManager dataManager = DataManager.getInstance();
-        dataManager.getData();
+        dataManager.getData(Common.MAIN_DATA);
     }
 
     @Override

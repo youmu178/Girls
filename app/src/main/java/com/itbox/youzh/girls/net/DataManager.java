@@ -20,8 +20,8 @@ public class DataManager {
         return dataManager;
     }
 
-    public void getData() {
-        DataNetThread dataNetThread = new DataNetThread();
+    public void getData(int way) {
+        DataNetThread dataNetThread = new DataNetThread(way);
         dataNetThread.setPriority(Thread.NORM_PRIORITY - 1);
         dataNetThread.start();
     }

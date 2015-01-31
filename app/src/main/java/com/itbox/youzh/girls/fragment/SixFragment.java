@@ -38,8 +38,8 @@ public class SixFragment extends BaseFragment {
 //        mGridView.setAdapter(gridAdapter);
 //        mGridView.setOnItemClickListener(this);
 
-        DataManager dataManager = DataManager.getInstance();
-        dataManager.getData();
+//        DataManager dataManager = DataManager.getInstance();
+//        dataManager.getData();
         return layout;
     }
 }

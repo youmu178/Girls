@@ -25,6 +25,7 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.2.0'
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
     compile 'com.squareup.okio:okio:1.2.0'
+    compile 'com.squareup.picasso:picasso:2.4.0'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     compile 'com.jpardogo.listbuddies:library:1.1.1'
     compile 'com.jakewharton:butterknife:6.0.0'
